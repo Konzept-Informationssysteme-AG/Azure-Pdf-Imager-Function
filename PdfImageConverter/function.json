@@ -5,14 +5,14 @@
       "name": "myBlob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "docs/{name}",
-      "connection": "https://demoformreco.blob.core.windows.net/formrecognizer"
+      "path": "menucard-{id}/{name}",
+      "connection": "AzureWebJobsStorage"
     },
     {
       "name": "myOutputBlob",
       "type": "blob",
-      "path": "images/{name}.png",
-      "connection": "https://demoformreco.blob.core.windows.net/formrecognizer",
+      "path": "menucard-{id}/thumbnail.png",
+      "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
   ]
