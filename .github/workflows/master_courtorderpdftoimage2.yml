@@ -41,4 +41,4 @@ jobs:
           app-name: 'courtorderpdftoimage2'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0AAF623C2C7F4A7E896C457848832744 }}
+          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
