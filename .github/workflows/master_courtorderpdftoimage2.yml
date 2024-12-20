@@ -39,6 +39,6 @@ jobs:
         id: fa
         with:
           app-name: 'courtorderpdftoimage2'
-          slot-name: 'Production'
+          #slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
